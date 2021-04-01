@@ -2,9 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 :root{
-  //colors and font sizes here 
+  //colors
 
   --primary: #B81830;
   --darkText: #181818;
@@ -14,10 +13,12 @@ export const GlobalStyle = createGlobalStyle`
   --background: #f4f4f4;
   --inStock: #095B1F;
   --lowStock: #b5520a;
-@media all and (min-width: 768px){
-  .mobile{
+
+  @media all and (min-width: 768px){
+    .mobile{
     display: none;
-  }}
+  }
+}
   @media all and (max-width: 768px){
     .desktop{
       display: none;
@@ -33,25 +34,41 @@ body{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 33px;
+    
+    @media all and (min-width: 768px){ 
+      font-size: 51px;
+    }
 
   }
   .h2-headline{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 28px;
-    color: var(--darkText)
+    color: var(--darkText);
+
+    @media all and (min-width: 768px){ 
+      font-size: 42px;
+    }
   }
   .h3-headline{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 22px;
-    color: var(--darkText)
+    color: var(--darkText);
+
+    @media all and (min-width: 768px){ 
+      font-size: 28px;
+    }
   }
   .h4-headline{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    color: var(--darkText)
+    color: var(--darkText);
+
+    @media all and (min-width: 768px){ 
+      font-size: 24px;
+    }
   }
 
   .large-paragraph{
@@ -59,6 +76,10 @@ body{
     font-weight: 400;
     font-size: 15px;
     color: var(--lightText);
+    
+    @media all and (min-width: 768px){ 
+      font-size: 18px;
+    }
   }
 
   .small-paragraph{
@@ -66,13 +87,16 @@ body{
     font-weight: 400;
     font-size: 14px;
     color: var(--lightText);
+    
+    @media all and (min-width: 768px){ 
+      font-size: 16px;
+    }
   }
 button{
   padding: 18px 36px;
   border-radius: 4px;
   font-family:'Noto Sans', sans-serif;
   font-weight: bold;
-  /* margin: 10px; */
 }
     .primary{
       background-color: var(--primary);
@@ -97,6 +121,10 @@ button{
     font-size: 15px;
     font-weight: bold;
     color: var(--primary);
+
+    @media all and (min-width: 768px){ 
+      font-size: 16px;
+    }
   }
 }
 
